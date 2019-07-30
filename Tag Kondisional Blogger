@@ -1,0 +1,33 @@
+Halaman Utama (url halaman depan cont: www.nurhidayat.web.id)
+<b:if cond='data:view.isHomepage'> … </b:if>
+
+Halaman Index (Halaman depan, pencarian, arsip, label)
+<b:if cond='data:view.isMultipleItems'> … </b:if>
+
+Halaman Item (Halaman Postingan dan Statis)
+<b:if cond='data:view.isSingleItem'> … </b:if>
+
+Halaman Postingan
+<b:if cond='data:view.isPost'> … </b:if>
+
+Halaman Statis
+<b:if cond='data:view.isPage'> … </b:if>
+
+Halaman Label
+<b:if cond='data:view.isLabelSearch'> … </b:if>
+
+Halaman Arsip
+<b:if cond='data:view.isArchive'> … </b:if>
+
+Halaman Pencarian
+<!-- Termasuk halaman pencarian label -->
+<b:if cond='data:view.isSearch'> … </b:if>
+
+<!-- Hanya halaman pencarian -->
+<b:if cond='data:view.isSearch and !data:view.isLabelSearch'> … </b:if>
+
+Halaman Error 404
+<b:if cond='data:view.isError'> … </b:if>
+
+Halaman Preview
+<b:if cond='data:view.isPreview'> … </b:if>

@@ -1,0 +1,7 @@
+replace this :
+ 
+<b:loop values='data:posts' var='post'>
+ 
+by this :
+
+<b:loop values='data:view.isHomepage ? data:posts where (p => p.labels none (l => l.name == "LABEL HERE")) : data:posts' var='post'>
